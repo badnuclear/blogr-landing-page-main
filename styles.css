@@ -5,3 +5,88 @@
   --Very__dark-blue: hsl(208, 49%, 24%);
   --White: hsl(0, 0%, 100%);
 }
+html {
+  font-family: "Ubuntu", sans-serif, "Overpass", sans-serif;
+  font-size: 18px;
+}
+body {
+  font-size: calc(0.7rem - 0.3vw);
+  overflow-x: hidden;
+}
+
+/* 헤더 시작 */
+
+header {
+  background-image: url("images/bg-pattern-intro.svg"),
+    linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  height: 60vh;
+  border-bottom-left-radius: 85px;
+  background-position: 34% 53%;
+  background-repeat: no-repeat;
+  color: var(--White);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  min-height: 340px;
+  flex-shrink: 0;
+  align-items: center;
+}
+.menu img {
+  object-fit: scale-down;
+}
+.under__bar {
+  position: relative;
+  margin-left: 5px;
+}
+.under__bar a {
+  text-decoration: none;
+  color: inherit;
+}
+.menu__nav--tag a {
+  display: block;
+  margin: 17px auto;
+}
+.under__bar img {
+  margin-left: 5px;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+}
+.menu__nav {
+  background-color: var(--White);
+  position: absolute;
+  border-radius: 8px;
+  width: 150px;
+  top: 50px;
+  left: -12px;
+  color: black;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+.menu__nav.show {
+  display: block;
+  max-height: 400px;
+  height: auto;
+  padding: 15px;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.menu__nav--tag {
+  display: none;
+}
+.show {
+  display: block;
+  height: auto;
+}
