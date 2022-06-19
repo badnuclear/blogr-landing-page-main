@@ -5,6 +5,8 @@
   --Light__red_02: hsl(353, 100%, 62%);
   --Very__dark-blue: hsl(208, 49%, 24%);
   --White: hsl(0, 0%, 100%);
+  --Very__dark__gray-blue: hsl(237, 17%, 21%);
+  --Very__dark__desaturated-blue: hsl(237, 23%, 32%);
 }
 * {
   margin: 0;
@@ -170,7 +172,7 @@ h1 {
 }
 
 /* 메인 */
-.main-container {
+.main-top {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -184,4 +186,102 @@ h1 {
 }
 h2 {
   text-align: center;
+  color: var(--Very__dark-blue);
+  font-size: calc(1.7rem + 0.5vw);
+  font-weight: 400;
+  margin: 105px auto;
+}
+h3 {
+  font-size: calc(1.3rem + 0.5vw);
+  color: var(--Very__dark-blue);
+}
+.main-flex {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px auto;
+}
+.images img:first-of-type {
+  position: absolute;
+  right: -400px;
+  top: -200px;
+}
+.mobile {
+  display: none;
+}
+.middle-container {
+  background-image: url("images/bg-pattern-circles.svg"),
+    linear-gradient(
+      to right,
+      var(--Very__dark__gray-blue),
+      var(--Very__dark__desaturated-blue)
+    );
+  background-position: -65% 87%;
+  background-repeat: no-repeat;
+  margin: 270px auto;
+  border-radius: 0px 75px 0px 75px;
+}
+
+.middle-top {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.middle-text {
+  width: calc(50% - 2.5%);
+  color: hsl(207, 13%, 34%);
+  line-height: 2rem;
+  font-weight: 400;
+  font-family: "Overpass", sans-serif;
+}
+.bad .middle-text {
+  color: var(--White);
+  margin-top: calc(120px - 15px);
+  margin-bottom: 120px;
+}
+.bad img {
+  position: absolute;
+  left: -50px;
+  top: -70px;
+}
+.bad h2 {
+  margin-bottom: 15px;
+  color: var(--White);
+}
+.middle-container .middle-flex {
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 25px auto;
+}
+.lower-container .lower-flex {
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 25px auto;
+}
+.lower-top {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.lower-text {
+  width: calc(50% - 2.5%);
+  color: hsl(207, 13%, 34%);
+  line-height: 2rem;
+  font-weight: 400;
+  font-family: "Overpass", sans-serif;
+}
+.good img:not(.mobile) {
+  position: absolute;
+  left: -400px;
+}
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
