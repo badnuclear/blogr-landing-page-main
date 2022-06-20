@@ -318,8 +318,7 @@ footer a {
 .attribution {
   position: relative;
   text-align: center;
-  top: 30px;
-  font-size: 13px;
+  font-size: 16px;
   color: #004a9e;
 }
 .attribution a {
@@ -328,5 +327,5 @@ footer a {
   text-decoration: none;
 }
 .attribution a:hover {
-  color: #25564b;
+  color: #ec6ead;
 }
