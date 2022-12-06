@@ -107,19 +107,19 @@ nav {
 button,
 .login button {
   background-color: var(--White);
-  border: 2px solid transparent;
+  border: 2px solid var(--White);
   border-radius: 25px;
   width: 140px;
   padding: 15px;
   display: inline-block;
   color: hsl(353, 100%, 62%);
   font-weight: 700;
-  transition: color 0.7s 0.3s ease-in-out;
-  transition: background-color 0.7s 0.3s ease-in-out;
+  transition: color 0.3s 0.3s ease-in-out;
+  transition: background-color 0.3s 0.3s ease-in-out;
 }
 .login button:hover {
-  color: #f8b500;
-  background-color: #fceabb;
+  color: var(--White);
+  background-color: transparent;
 }
 
 h1 {
@@ -155,20 +155,22 @@ h1 {
 }
 .header__btn button:first-child {
   border: 1px solid var(--White);
+  transition: color 0.2s 0.2s ease-in-out;
+  transition: background-color 0.2s 0.2s ease-in-out;
 }
 .header__btn button:nth-child(2) {
   background-color: transparent;
   border: 1px solid var(--White);
   color: var(--White);
-  transition: color 0.5 0.3 ease-in-out;
-  transition: background-color 0.5 0.3 ease-in-out;
+  transition: color 0.2s 0.2s ease-in-out;
+  transition: background-color 0.2s 0.2s ease-in-out;
 }
 .header__btn button:nth-child(2):hover {
-  color: #f8b500;
+  color: hsl(353, 100%, 62%);
   background-color: var(--White);
 }
 .header__btn button:first-child:hover {
-  color: #3b4371;
+  color: var(--White);
   background-color: transparent;
 }
 
